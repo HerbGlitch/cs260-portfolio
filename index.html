@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>portfolio</title>
+    </head>
+    <body>
+        <h1>Heber Brau</h1>
+        <hr>
+        <h2>About</h2>
+        <p>I am a student currently learning as much as I can about programming as fast as I can. My hobbies include programming and martial arts. I am currently in the process of building my own computer from bits to a completed machine. I love to drone race (I am really bad at it) and 3D print. I am an avid Star Wars (Legends) fan, and I make costumes that I then wear to Fan X in Salt Lake. I have one older sister and two older brothers. We have been raised mostly in Provo, but each of us children have traveled to different places. I learned to play the saxophone during the span of high school. I enjoy most forms of electronic music. I enjoy reading and some of my favorite books are: "Halo: The Fall of Reach," "Darth Bane," and "The Martian Chronicles." I am a professional photographer, like my sister and brothers. I am also very experienced with Photoshop and am learning Illustrator. </p>
+        <hr>
+        <h2>Projects</h2>
+        <ul>
+            <a href="github.com/herbglitch"><li>github</li></a>
+            <a href="pocketcampaigns.org"><li>pocketcampaigns.org</li></a>
+            <a href="heberbrau.com"><li>heberbrau.com</li></a>
+        </ul>
+        <hr>
+        <h2>Experience</h2>
+        <ul>
+            <li>I worked at skipio for some time developing websites</li>
+            <li>I also have learned a lot of c++ programming and web programming on my own and have built <a href="pocketcampaigns.org">pocketcampaigns.org</a> for a community on reddit</li>
+        </ul>
+        <hr>
+        <h2>Contact</h2>
+        <ul>
+            <a href="mailto:heber.brau@gmail.com"><li>email</li></a>
+            <a href="github.com/herbglitch"><li>github</li></a>
+        </ul>
+    </body>
+</html>
+<!--
+On your local machine, inside your portfolio directory, start a local web server to test your code. Later we will do this with webpack. For now, you can use this python command for Python 3:
+
+python3 -m http.server
+
+or this command for Python 2:
+
+python -m SimpleHTTPServer
+
+Both of these will open a web server that you can visit by going to localhost:8000 in a web browser. Test your web page to be sure it is working.
+
+Create a repository on GitHub for this activity. I called my "portfolio". Don't check the box for adding a README file.
+    *Review the git lesson pages before continuing
+
+Inside of your portfolio directory, initialize a git repository with git init, add the GitHub repository as a remote, and push your code to GitHub. View your code on GitHub to be sure it is there.
+
+git init
+git add index.html
+git commit -m "First commit"
+git remote add origin git@github.com:zappala/portfolio
+git push -u origin master
+
+Be sure to substitute your own username and repository name. 
+*If you are using HTTPS (and NOT using SSH keys), then your GitHub links will look like this: https://github.com/zappala/gitpractice.git.
+*If you are using SSH keys, then you github links will look like git@github.com:zappala/gitpractice.
+*There is a small link in the Clone or Download dialog that lets you switch between these.
+
+You are going to clone your git repository to your Digital Ocean server. Login to your DigitalOcean server with ssh and run this command:
+
+mkdir ~/.ssh
+
+Then, for the git clone to work without a password, the ssh keys you have on your local machine must also be on the remote machine. To do this, run this command from your local machine:
+
+scp ~/.ssh/id_rsa* zappala@104.236.65.193:/home/zappala/.ssh/
+
+Substitute your own username and IP address.
+
+Next, use git clone to clone your GitHub repository into your home directory. This will be in /home/[your username].
+
+You may need to run this command to give yourself ownership of the /var/www/html directory:
+
+sudo chown -R [your username] /var/www/html
+
+Now copy your index.html file to /var/www/html. Note, so that you have ownership of all the files in /var/www/html.
+
+Visit your server in a browser, using the IP address of your DigitalOcean machine, to verify it works.
+
+On your local machine, make some kind of a change to your index.html file. Commit and push the changes to GiHub. Login to your DigitalOcean server and pull these changes and then copy them to /var/www/html again. Reload your browser. Be sure this all works. This is your development workflow! We will be using this cycle regularly throughout the class.
+
+Turn a screenshot of your web page, including the URL that shows it is on your Digital Ocean server. Congrats! -->
